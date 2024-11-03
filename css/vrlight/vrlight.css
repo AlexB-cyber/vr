@@ -1,0 +1,80 @@
+body {
+  background: #fff;
+}
+.vr-light-card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.vr-light-card h1 {
+  width: 445px;
+  text-align: right;
+  line-height: 80px;
+}
+.vr-light-card-text {
+  width: 640px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: right;
+}
+.vr-light-card-text p {
+  font-size: 30px;
+}
+.vr-light-layout {
+  display: grid;
+  width: 100%;
+  grid-template-rows: repeat(2, 620px);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "specifics empty"
+                        "specifics set";
+  gap: 25px;                      
+}
+.vr-light-layout {
+  position: relative;
+}
+.vr-light-layout-item:nth-child(1) {
+  grid-area: specifics;
+  background: black;
+  color: #fff;
+}
+.vr-light-layout-item:nth-child(1) p {
+  font-size: 30px;
+  padding: 5px 50px;
+  width: 600px;
+}
+.vr-light-layout-item:nth-child(1) h2 {
+  padding: 75px 50px;
+  font-size: 45px;
+  text-align: left;
+  width: 400px;
+}
+.vr-light-layout-item:nth-child(2) {
+  grid-area: set;
+  background: linear-gradient(180deg, rgba(52, 121, 255), rgba(180,98,244));
+  color: #fff;
+}
+.vr-light-layout-item:nth-child(2) h2{
+  font-size: 45px;
+  text-align: right;
+  padding: 40px;
+}
+.vr-light-layout-item:nth-child(2) p{
+  text-align: right;
+  font-size: 30px;
+  padding: 140px 40px 140px 0;
+}
+.vr-light-layout-item:nth-child(3) {
+  grid-area: empty;
+}
+.vr-btn {
+  position: absolute;
+  right: 40px;
+  font-size: 35px;
+  padding: 32px 100px;
+  border-radius: 0;
+  text-align: right;
+}

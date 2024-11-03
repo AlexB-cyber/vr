@@ -1,0 +1,10 @@
+:root{
+  --font-color1:#000000;
+  --font-color2:#ffffff;
+  --accent-color: #0D6EFD;
+  --card-color: #222222;
+  --bg-color: #ffffff;
+  --grad1:radial-gradient(100% 162.88% at 0% 0%, #3479FF 0%, #B462F4 100%);
+  --grad2:radial-gradient(100% 162.88% at 0% 0%, #FF450B 0%, #B462F4 100%);
+  --grad3:radial-gradient(100% 162.88% at 0% 0%, #FF8C21 0%, #FFDB5C 100%);
+}

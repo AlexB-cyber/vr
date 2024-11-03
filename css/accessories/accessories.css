@@ -1,0 +1,152 @@
+body {
+  padding: 20px 150px 50px 150px;
+}
+.accessories-layout {
+  display: grid;
+  gap: 20px;
+  grid-template-rows: repeat(7, 550px);
+  grid-template-columns: repeat(4, 375px);
+  grid-template-areas: "cabel cabel title title"
+                        "cabel cabel case case"
+                        "belts belts charge pad"
+                        "headphones headphones pack pack"
+                        "--- --- --- ---"
+                        "type-c wireless-charge wireless-charge wireless-charge"
+                        "adapter adapter order order";
+}
+.accessories-layout-item {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+}
+.accessories-layout-item:nth-child(2) {
+  text-align: right;
+}
+.accessories-layout-item:nth-child(2) hr{
+  width: 300px;
+  height: 8px;
+  background-color: black;
+}
+.accessories-layout-item:not(:nth-child(2)) {
+  display: flex;
+  background-color: #EFF0F1;
+}
+.accessories-layout-item p{
+  font-size: 25px;
+  font-weight: 700;
+  width: 200px;
+}
+.accessories-layout-item:nth-child(1){
+  background: url("img/accessories1.png") top/cover no-repeat;
+  grid-area: cabel;
+  align-items: flex-end;
+}
+.accessories-layout-item:nth-child(2){
+  grid-area: title;
+}
+.accessories-layout-item:nth-child(3){
+  grid-area: case;
+  justify-content: flex-end;
+  background: url("img/accessories3.png") center/contain no-repeat;
+  background-color: #EFF0F1;
+}
+.accessories-layout-item:nth-child(3) p {
+  text-align: right;
+}
+.accessories-layout-item:nth-child(4) {
+  grid-area: belts;
+  background: url("img/accessories4.png") center/contain no-repeat;
+  align-items: flex-end;
+  background-color: #EFF0F1;
+}
+.accessories-layout-item:nth-child(5) {
+  grid-area: charge;
+  background: url("img/accessories5.png") center/contain no-repeat;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-color: #EFF0F1;
+}
+.accessories-layout-item:nth-child(5) p {
+  text-align: right;
+}
+.accessories-layout-item:nth-child(6) {
+  grid-area: pad;
+  background: url("img/accessories6.png") center/contain no-repeat;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-color: #EFF0F1;
+}
+.accessories-layout-item:nth-child(6) p {
+  text-align: right;
+}
+.accessories-layout-item:nth-child(7) {
+  grid-area: headphones;
+  background: url("img/accessories7.png") center/contain no-repeat;
+  align-items: flex-end;
+  justify-content: flex-start;
+  background-color: #EFF0F1;
+}
+.accessories-layout-item:nth-child(8) {
+  grid-area: pack;
+  background: url("img/accessories8.png") center/contain no-repeat;
+  align-items: flex-end;
+  justify-content: flex-start;
+  background-color: #EFF0F1;
+}
+.accessories-layout-item:nth-child(9) {
+  grid-area: ---;
+  background: url("img/accessories9.png") left/contain no-repeat;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-color: #EFF0F1;
+}
+.accessories-layout-item:nth-child(9) p {
+  text-align: right;
+}
+.accessories-layout-item:nth-child(10) {
+  grid-area: type-c;
+  background: url("img/accessories10.png") center/contain no-repeat;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-color: #EFF0F1;
+}
+.accessories-layout-item:nth-child(11) {
+  grid-area: wireless-charge;
+  background: url("img/accessories11.png") center/contain no-repeat;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-color: #EFF0F1;
+}
+.accessories-layout-item:nth-child(11) p {
+  text-align: right;
+}
+.accessories-layout-item:nth-child(12) {
+  grid-area: adapter;
+  background: url("img/accessories12.png") center/contain no-repeat;
+  align-items: flex-end;
+  justify-content: flex-start;
+  background-color: #EFF0F1;
+}
+.accessories-layout-item:nth-child(13) {
+  grid-area: order;
+  background: linear-gradient(90deg, rgba(255,140,33), rgb(255, 219, 92));
+  color: #fff;
+}
+.accessories-layout-item:nth-child(13) h3 {
+  position: absolute;
+  right: 40px;
+}
+.accessories-layout-item:nth-child(13) p {
+  position: absolute;
+  right: 40px;
+  top: 210px;
+}
+.acc-btn {
+  position: absolute;
+  right: 40px;
+  bottom: 30px;
+  font-size: 35px;
+  padding: 32px 100px;
+  border-radius: 0;
+  text-align: right
+}

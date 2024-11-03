@@ -1,0 +1,42 @@
+hr {
+  margin: 50px 0;
+}
+.products-container {
+  display: grid;
+  grid-template-rows: repeat(2, 420px);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "glasses-light accessories market"
+                       "glasses-light glasses-pro glasses-pro";
+  gap: 26px;
+}
+.products-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 25px;
+}
+.products-item p {
+  font-size: 40px;
+}
+.products-item a {
+  align-self: flex-end;
+}
+.products-item:nth-child(1) {
+  grid-area: glasses-light;
+  background: radial-gradient(92.63% 79.19% at 11.85% 31.04%, #B462F4 0%, rgba(255, 255, 255, 0) 100%), url('img/product-1.png') center/cover no-repeat;
+}
+.products-item:nth-child(2) {
+  grid-area: accessories;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('img/product-3.png') center/cover no-repeat;
+}
+.products-item:nth-child(3) {
+  grid-area: market;
+  background:radial-gradient(98.18% 144.48% at 100% 98.18%, #FF450B 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(61.04% 79.24% at 2.5% 5.83%, #FF450B 0%, rgba(255, 11, 11, 0) 100%), url('img/product-4.png') center/cover no-repeat;
+}
+.products-item:nth-child(4) {
+  grid-area: glasses-pro;
+  background: radial-gradient(100% 623.79% at 0% 4.85%, #16FFFF 0%, rgba(0, 0, 0, 0) 100%), url('img/product-2.png') center/cover no-repeat;
+}
+.products-item:not(:first-child) {
+  color: #fff;
+}

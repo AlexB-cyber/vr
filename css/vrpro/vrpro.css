@@ -1,0 +1,87 @@
+.vr-body {
+  margin: 0;
+  padding: 0;
+  background:rgb(43,42,49);
+}
+.vr-pro {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+.vr-pro-card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.vr-pro-card h1 {
+  width: 445px;
+  text-align: right;
+  line-height: 80px;
+}
+.vr-pro-card-text {
+  width: 640px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: right;
+}
+.vr-pro-card-text p {
+  font-size: 30px;
+}
+.vr-pro-layout {
+  display: grid;
+  width: 100%;
+  grid-template-rows: repeat(2, 620px);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "specifics empty"
+                        "specifics set";
+  gap: 25px;                      
+}
+.vr-pro-layout {
+  position: relative;
+}
+.vr-pro-layout-item:nth-child(1) {
+  grid-area: specifics;
+  background: #fff;
+  color: black;
+}
+.vr-pro-layout-item:nth-child(1) p {
+  font-size: 30px;
+  padding: 5px 50px;
+  width: 600px;
+}
+.vr-pro-layout-item:nth-child(1) h2 {
+  padding: 75px 50px;
+  font-size: 45px;
+  text-align: left;
+  width: 400px;
+}
+.vr-pro-layout-item:nth-child(2) {
+  grid-area: set;
+  background: linear-gradient(90deg, rgba(255,69,11), rgb(180, 98, 244));
+  color: #fff;
+}
+.vr-pro-layout-item:nth-child(2) h2{
+  font-size: 45px;
+  text-align: right;
+  padding: 40px;
+}
+.vr-pro-layout-item:nth-child(2) p{
+  text-align: right;
+  font-size: 30px;
+  padding: 140px 40px 140px 0;
+}
+.vr-pro-layout-item:nth-child(3) {
+  grid-area: empty;
+}
+.vr-btn {
+  position: absolute;
+  right: 40px;
+  font-size: 35px;
+  padding: 32px 100px;
+  border-radius: 0;
+  text-align: right;
+}

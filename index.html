@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/favicon.ico">
+  <title>VR</title>
+</head>
+<body>
+  <nav class="menu">
+    <input type="checkbox" class="menu-toggler" id="menu-toggler" checked>
+    <div class="menu-main">
+      <a href="#"><img src="img/site-logo.svg" alt="site-logo"></a>
+      <div class="menu-buttons">
+        <label for="menu-toggler" class="menu-label">Продукция</label>
+        <a href="form.html" class="btn btn-primary">Купить</a>
+      </div>
+    </div>
+    <div class="menu-rolled">
+      <a href="#" class="menu-rolled-link">
+        <img src="img/menu-item1.svg" class="menu-rolled-img">
+        <p class="menu-rolled-text">VR glasses light</p>
+      </a>
+      <a href="#" class="menu-rolled-link">
+        <img src="img/menu-item2.svg" class="menu-rolled-img">
+        <p class="menu-rolled-text">VR glasses PRO</p>
+      </a>
+      <a href="#" class="menu-rolled-link">
+        <img src="img/menu-item3.svg" class="menu-rolled-img">
+        <p class="menu-rolled-text">Аксессуары</p>
+      </a>
+    </div>
+  </nav>
+
+
+  <header class="header">
+    <div class="container">
+      <h1>VR Гарнитуры для дома и разработки</h1>
+      <p>
+        Соревнуйся с друзями, работай и разрабатывай в VR. Приобретай одну из двух гарнитур и уже завтра тебе ее доставят
+      </p>
+      <div class="header-animated-circle">
+        <div class="header-animated-one"></div>
+        <div class="header-animated-two"></div>        
+      </div>
+      <img class="header-img" src=".//css/header/images/header-img.png">
+    </div>
+  </header>
+
+  <section class="products">
+    <div class="container">
+      <h2>Продукция</h2>
+      <hr>
+      <div class="products-container">
+        <div class="products-item">
+          <h3>VR Glasses light</h3>
+          <p>Самые популярные очки. Сочетание легкости, комфорта и отличных характеристик. По доступной цене</p>
+          <a href="VRlight.html" class="btn btn-primary">Подробнее</a>
+        </div>
+        <div class="products-item">
+          <h3>Аксессуары</h3>
+          <a href="#" class="btn btn-primary">Подробнее</a>
+        </div>
+        <div class="products-item">
+          <h3>VRSOFT Маркет</h3>
+          <p>Игры и приложения для ваших очков</p>
+          <a href="#" class="btn btn-primary">Подробнее</a>
+        </div>
+        <div class="products-item">
+          <h3>VR Glasses PRO</h3>
+          <p>Бескомпромиссная мощность и красота. Самые современные технологии для реализации ваших идей</p>
+          <a href="VRpro.html" class="btn btn-primary">Подробнее</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="video">
+    <div class="container">
+      <video src="video/video.mp4" autoplay muted loop></video>
+    </div>
+  </section>
+
+  <section class="abilities">
+    <div class="container">
+      <h2>Возможности</h2>
+      <hr>
+      <div class="abilities-content">
+        <input type="radio" class="abilities-toggler" id="abilities-toggler-1" name="abilities-radio">
+        <input type="radio" class="abilities-toggler" id="abilities-toggler-2" name="abilities-radio">
+        <input type="radio" class="abilities-toggler" id="abilities-toggler-3" name="abilities-radio">
+        <input type="radio" class="abilities-toggler" id="abilities-toggler-4" name="abilities-radio">
+
+        <div class="abilities-buttons">
+          <label for="abilities-toggler-1" class="abilities-button">Фитнес</label>
+          <label for="abilities-toggler-2" class="abilities-button">Работа</label>
+          <label for="abilities-toggler-3" class="abilities-button">Развлечения</label>
+          <label for="abilities-toggler-4" class="abilities-button">Образование</label>
+        </div>
+
+        <ul class="opportunities__images">
+          <li>
+              <span>
+                  Используйте шлем для своих тренировок. Миллионы разных сценариев, для комплексной поддержки и развития тела
+              </span>
+          </li>
+          <li>
+              <span>
+                Создай рабочее пространство мечты. Работай на орбите марса или на вершине Альпов. Виртуальные офисы, боты и  множество других программ для организации работы в VR
+              </span>
+          </li>
+          <li>
+            <span>
+                Сотни игр и развлечений для любых возрастов. Встроенный магазин с доступом напрямую из шлема
+            </span>
+          </li>
+          <li>
+            <span>
+                Обучайся и изучай с VR. Возможность строить изучать механизмы и проводить опыты без вреда для жизни и с виртуальными помощниками
+            </span>
+          </li>                
+      </ul>   
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="other">
+    <div class="container other-container">
+      <div class="other-layout">
+        <div class="other-layout-item">
+          <h3>Блог о VR</h3>
+          <p>Узнай о новость в Vr первым, читая наш блог</p>
+        </div>
+        <div class="other-layout-item">
+          <h3>VR Workspace</h3>
+          <p>Истории о том, как люди покидают офисы и работают в VR пространстве</p>
+        </div>
+        <div class="other-layout-item">
+          <h3>Наша компания</h3>
+          <p>Хочешь узнать о нас больше? Культура, работа и отдых в компании</p>
+        </div>
+        <div class="other-layout-item">
+          <h3>И многое другое</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,89 @@
+.abilities h2 {
+  margin-bottom: 60px;
+}
+.abilities-content {
+  display: flex;
+}
+.abilities-content input {
+  position: fixed;
+  display: none;
+}
+.abilities-buttons {
+  display: flex;
+  flex-direction: column;
+  height: 750px;
+}
+.abilities-button {
+  display: flex;
+  height: 25%;
+  width: 350px;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  transition: 0.1s;
+}
+.opportunities__images {
+  height: 750px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+}
+.opportunities__images li {
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+  height: 0;
+  color: var(--font-color2);
+  justify-content: flex-end;
+  align-items: flex-end;
+  transition: 1s;
+}
+.opportunities__images span {
+  width: 600px;
+  padding: 0px 50px 50px 0;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: right;
+}
+#abilities-toggler-1:checked ~ .abilities-buttons .abilities-button:nth-child(1) {
+  background: var(--card-color);
+  color: var(--font-color2);
+}
+#abilities-toggler-2:checked ~ .abilities-buttons .abilities-button:nth-child(2) {
+  background: var(--card-color);
+  color: var(--font-color2);
+}
+#abilities-toggler-3:checked ~ .abilities-buttons .abilities-button:nth-child(3) {
+  background: var(--card-color);
+  color: var(--font-color2);
+}
+#abilities-toggler-4:checked ~ .abilities-buttons .abilities-button:nth-child(4) {
+  background: var(--card-color);
+  color: var(--font-color2);
+}
+#abilities-toggler-1:checked ~ .opportunities__images li:nth-child(1) {
+  height: 100%;
+}
+#abilities-toggler-2:checked ~ .opportunities__images li:nth-child(2) {
+  height: 100%;
+}
+#abilities-toggler-3:checked ~ .opportunities__images li:nth-child(3) {
+  height: 100%;
+}
+#abilities-toggler-4:checked ~ .opportunities__images li:nth-child(4) {
+  height: 100%;
+}
+.opportunities__images li:nth-child(1) {
+  background: url("img/opp-img1.png") center/cover no-repeat;
+}
+.opportunities__images li:nth-child(2) {
+  background: url("img/opp-img2.png") center/cover no-repeat;
+}
+.opportunities__images li:nth-child(3) {
+  background: url("img/opp-img3.png") center/cover no-repeat;
+}
+.opportunities__images li:nth-child(4) {
+  background: url("img/opp-img4.png") center/cover no-repeat;
+}

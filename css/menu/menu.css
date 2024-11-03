@@ -1,0 +1,67 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 70px;
+  background: var(--bg-color);
+  z-index: 10000;
+  border-bottom: 1px solid var(--card-color);
+}
+.menu-main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-toggler {
+  position: fixed;
+  display: none;
+}
+.menu-toggler:checked ~ .menu-rolled {
+  height: 0;
+  margin-top: 0;
+  overflow: hidden;
+}
+.menu-label {
+  position: relative;
+  cursor: pointer;
+}
+.menu-label:before {
+  position: absolute;
+  transform: rotateX(0);
+  content: '';
+  left: -35px;
+  width: 30px;
+  height: 30px;
+  background: url("images/menu-open-arrow.svg") center/cover no-repeat;
+}
+.menu-toggler:checked ~ .menu-main .menu-buttons .menu-label:before {
+  transform: rotateX(180deg);
+}
+.menu-rolled {
+  height: calc(2rem + 20px);
+  transition: 0.5s;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+.menu-rolled-link {
+  text-decoration: none;
+  color: var(--font-color1);
+  display: flex;
+  flex-direction: column;
+}
+.menu-rolled-link p {
+  transition: 0.5s;
+  font-weight: 900;
+}
+.menu-rolled-link img {
+  height: 30px;
+  margin-bottom: 20px;
+}
+.menu-rolled-link:hover {
+  color: var(--accent-color);
+}

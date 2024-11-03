@@ -1,0 +1,48 @@
+.header {
+  width: 100%;
+  padding-top: 150px;
+}
+.header h1, .header p {
+  line-height: 100%;
+  max-width: 900px;
+  text-align: center;
+  margin: 30px auto;
+}
+.header p {
+  width: 45%;
+  margin-top: 50px;
+}
+.header-img {
+  width: 100%;
+}
+.header-animated-circle {
+  position: relative;
+}
+.header-animated-one {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: conic-gradient(from 180deg at 50% 50%, #0DC5FF 0deg, #2B416B 360deg);
+}
+.header-animated-two {
+  animation: circle_animation 30s linear infinite;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: conic-gradient(from 57.12deg at 50% 50%, #00FFD1 0deg, rgba(0, 255, 209, 0) 360deg);
+}
+
+@keyframes circle_animation{
+  0%{
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg)
+  }
+}
